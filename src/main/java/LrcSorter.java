@@ -52,7 +52,7 @@ public class LrcSorter {
                 lrcFiles.forEach(lf -> {
 
                     // get pure track name from lyrics
-                    String lrcTrackName = lowerCase(trim(removeExtension(lf.getName()).split("-")[1])).replace(" ", "_");
+                    String lrcTrackName = lowerCase(trim(removeExtension(lf.getName()).split(" - ")[1])).replace(" ", "_");
                     // get pure track file name
                     String trackName = mf.getName().toLowerCase().replace(" ", "_");
 
